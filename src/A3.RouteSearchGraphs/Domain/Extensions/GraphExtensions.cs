@@ -49,7 +49,7 @@ internal static class GraphExtensions
             return cost;
         }
 
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        [MethodImpl(MethodImplOptions.AggressiveOptimization)]
         internal void EnsureValidIndex(int value, [CallerArgumentExpression(nameof(value))] string? parameterName = null)
         {
             var maxExclusive = matrix.Length;

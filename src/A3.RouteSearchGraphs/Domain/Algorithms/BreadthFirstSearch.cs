@@ -11,6 +11,8 @@ internal sealed class BreadthFirstSearch : IGraphSearchAlgorithm
         matrix.EnsureValidIndex(source);
         matrix.EnsureValidIndex(target);
 
+
+
         var start = Stopwatch.GetTimestamp();
 
         var parents = Enumerable.Repeat(-1, matrix.Length).ToArray();
